@@ -68,6 +68,25 @@ body {
       GENERAL REUSEABLE COMPONENTS
 ***************************** */
 
+.container {
+  max-width: 110rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .heading-primary {
   font-size: 4.8rem;
   font-weight: 700;
@@ -182,6 +201,8 @@ body {
   padding: 4.8rem 0 9.6rem 0;
 }
 
+/* We could use our reuseable container but we want it to be larger than the other container */
+
 .hero {
   max-width: 120rem;
   margin: 0 auto;
@@ -233,4 +254,13 @@ body {
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
+}
+
+/* *****************************
+      HOW IT WORKS SECTION
+***************************** */
+
+.section-how {
+  padding: 9.6rem 0;
+  background-color: red;
 }
