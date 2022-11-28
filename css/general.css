@@ -164,6 +164,7 @@ body {
   color: #e67e22;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   font-size: 2rem;
@@ -173,6 +174,8 @@ body {
   border-radius: 9px;
   text-decoration: none;
   transition: all 0.3s;
+  border: none;
+  cursor: pointer;
 }
 
 .btn--full:link,
@@ -214,6 +217,25 @@ body {
 .link:active {
   color: #cf711f;
   border-bottom: 1px solid transparent;
+}
+
+.btn-form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn-form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted red;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.525);
 }
 
 .margin-right-sm {
