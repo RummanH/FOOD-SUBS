@@ -60,6 +60,7 @@
 ***************************** */
 
 .section-hero {
+  /* Tint of the primary color */
   background-color: #fae5d3;
   padding: 4.8rem 0 9.6rem 0;
 }
@@ -67,7 +68,7 @@
 /* We could use our reuseable container but we want it to be larger than the other container */
 
 .hero {
-  max-width: 120rem;
+  max-width: 1240rem;
   margin: 0 auto;
   padding: 0 3.2rem;
   display: grid;
@@ -313,7 +314,7 @@
 }
 
 .testimonials-container {
-  padding: 8rem;
+  padding: 6.4rem;
 }
 
 .testimonials {
