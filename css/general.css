@@ -31,11 +31,20 @@ Paragraphs Default: 1.6
 - Greys: #555, #333, #777,#ddd
 - White:#fff
 
+--- 03 IMAGES
+
+unsplash.com, uifaces.com
+
+--- 04 ICONS
+
+ionicon,
 
 --- 05 SHADOWS
     
 --- 06 BORDER-RADIUS
+
 Default:9px
+Medium:11px
 
 --- 07 WHITESPACE
 
@@ -62,13 +71,18 @@ a tag: to go any where on the page or outside but button is for actions.
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
+  /* Any three same number grey darkest 000 lightest fff */
   color: #555;
+
+  /* this only works if nothing absolute positioned in relation to body */
+  overflow-x: hidden;
 }
 
 /* *****************************
@@ -124,19 +138,19 @@ body {
 }
 
 .heading-primary {
-  font-size: 4.8rem;
+  font-size: 5.2rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
 }
 
 .heading-secondary {
-  font-size: 3.6rem;
+  font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
 }
 
 .heading-tertiary {
-  font-size: 2.8rem;
+  font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
 }
@@ -163,6 +177,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
