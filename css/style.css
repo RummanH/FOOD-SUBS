@@ -382,7 +382,7 @@
 }
 
 /* *****************************
-      PRICING SECTION
+      PRICING SECTION R1
 ***************************** */
 
 .section-pricing {
@@ -464,14 +464,16 @@
   text-align: center;
 }
 
+/* SUB SECTION FEATURES */
+
 .feature-icon {
   color: #e67e22;
   height: 2.8rem;
   width: 2.8rem;
-  margin-bottom: 3.2rem;
   background-color: #fae5d3;
   padding: 1.4rem;
   border-radius: 50%;
+  margin-bottom: 3.2rem;
 }
 
 .feature-title {
@@ -487,7 +489,7 @@
 }
 
 /* *****************************
-      CALL TO ACTION SECTION ✔R1
+      CALL TO ACTION SECTION R1 R2
 ***************************** */
 
 .section-cta {
@@ -497,7 +499,6 @@
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
   /* here gradient with shades and main color */
@@ -512,6 +513,7 @@
 }
 
 .cta .heading-secondary {
+  /* although .heading-secondary has design defined but I want to override */
   color: inherit;
   margin-bottom: 3.2rem;
 }
@@ -520,18 +522,6 @@
   font-size: 1.8rem;
   line-height: 1.8;
   margin-bottom: 4.8rem;
-}
-
-.cta-img-box {
-  /* here linear-gradient(to right bottom, #eb984e, #e67e22) but with transparent */
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(235, 152, 79, 0.3),
-      rgba(230, 125, 34, 0.3)
-    ),
-    url("../img/eating.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 .cta-form {
@@ -551,8 +541,8 @@
 .cta-form select {
   width: 100%;
   padding: 1.2rem;
+  /* font size of input text */
   font-size: 1.8rem;
-
   /* not automatically inherit */
   font-family: inherit;
   border: none;
@@ -572,8 +562,20 @@
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.557);
 }
 
+.cta-img-box {
+  /* here linear-gradient(to right bottom, #eb984e, #e67e22) but with transparent */
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 152, 79, 0.3),
+      rgba(230, 125, 34, 0.3)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 /* *****************************
-      FOOTER
+      FOOTER  R1
 ***************************** */
 
 .footer {
@@ -581,11 +583,13 @@
   border-top: 1px solid #eee;
 }
 
+/* think about the the fr  */
 .grid--footer {
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
 .logo-col {
+  /* a very good trick is to use flex box and margin auto */
   display: flex;
   flex-direction: column;
 }
@@ -593,6 +597,12 @@
 .footer-logo {
   display: block;
   margin-bottom: 3.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
 }
 
 .social-icon {
@@ -604,15 +614,8 @@
   font-size: 1.4rem;
   color: #767676;
   line-height: 1.6;
-
-  /* good trick */
+  /* parent is flex good trick */
   margin-top: auto;
-}
-
-.social-links {
-  list-style: none;
-  display: flex;
-  gap: 2.4rem;
 }
 
 .footer-heading {
